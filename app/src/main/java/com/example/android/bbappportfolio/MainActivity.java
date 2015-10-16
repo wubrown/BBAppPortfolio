@@ -5,9 +5,10 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,6 +34,34 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
+    }
+    public void btn1Toast(View view){
+        Toast.makeText(getApplicationContext(), "Launch the Spotify Streamer",
+                Toast.LENGTH_LONG).show();
+    }
+
+    public void btn2Toast(View view){
+        Toast.makeText(getApplicationContext(), "Launch the Scores App",
+                Toast.LENGTH_LONG).show();
+    }
+
+    public void btn3Toast(View view){
+        Toast.makeText(getApplicationContext(), "Launch the Library App",
+                Toast.LENGTH_LONG).show();
+    }
+
+    public void btn4Toast(View view){
+        Toast.makeText(getApplicationContext(),"Launch the Build It Bigger App",
+                Toast.LENGTH_LONG).show();
+    }
+    public void btn5Toast(View view){
+        Toast.makeText(getApplicationContext(), "Launch the XYZ Reader App",
+                Toast.LENGTH_LONG).show();
+    }
+
+    public void btn6Toast(View view){
+        Toast.makeText(getApplicationContext(),"Launch BBs Capstone App",
+                Toast.LENGTH_LONG).show();
     }
 
     @Override
